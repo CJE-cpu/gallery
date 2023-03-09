@@ -9,3 +9,4 @@ function imageZoomIn() {
     bannerImgBx.style.width = "100%";
     bannerText.style.display = "none";
 }
+
