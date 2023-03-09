@@ -77,7 +77,7 @@ header {
     overflow: hidden;
 }
 
-.title {
+.banner_title {
     font-size: 48px;
     color: white;
 }
@@ -141,7 +141,7 @@ header {
     background-color: white;
 }
 
-.more_artists {
+.artist_title {
     font-size: 36px;
 }
 
@@ -153,17 +153,17 @@ header {
     height: 500px;
 }
 
-.card {
+.artist_card {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 500px;
+    height: 480px;
     border: 2.5px solid silver;
     transition: 0.5s ease-in-out;
 }
 
-.card:hover {
+.artist_card:hover {
     height: 700px;
 }
 
@@ -176,6 +176,13 @@ header {
 .artist_imgBx img {
     position: relative;
     width: 250px;
+}
+
+.artist_imgBx p {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
 }
 
 .artist_info {
@@ -191,7 +198,7 @@ header {
     transition: 0.5s ease-in-out;
 }
 
-.card:hover .artist_info {
+.artist_card:hover .artist_info {
     visibility: visible;
     opacity: 1;
     transition-delay: 0.5s;
@@ -220,4 +227,66 @@ footer {
     display: flex;
     width: 100%;
     justify-content: center;
+}
+
+@media (max-width:991px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        height: 400px;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav ul li {
+        display: flex;
+        align-items: center;
+    }
+
+    .banner {
+        height: 1200px;
+    }
+
+    .banner_title {
+        font-size: 36px;
+        color: white;
+        padding-bottom: 40px;
+    }
+
+    .banner_text p {
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+    }
+
+    .gallery {
+        height: 2500px;
+        padding: 0;
+    }
+
+    .artist_title {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .more_arts {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 2000px;
+    }
+
+    .artist_card {
+        margin: 100px 0;
+    }
 }
