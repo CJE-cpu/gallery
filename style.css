@@ -272,6 +272,12 @@ header {
     font-size: 24px;
 }
 
+.join_input ul li input[type=submit] {
+    background: black;
+    color: white;
+    width: 200px;
+}
+
 footer {
     width: 100%;
     height : 100px;
@@ -358,6 +364,19 @@ footer {
 
     .artist_card {
         margin: 100px 0;
+    }
+
+    .join {
+        text-align: center;
+    }
+
+    .join_title {
+        display: block;
+        padding: 0;
+    }
+
+    .join_input ul li input[type=submit] {
+        width: 75%;
     }
 
     footer {
